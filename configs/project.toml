@@ -1,0 +1,21 @@
+[project]
+name = "unnamed-clean-slate-investigation"
+clean_slate = true
+allow_new_foia_requests = false
+require_phase_checkpoint = true
+require_novelty_check = true
+
+[network]
+user_agent_env = "PRIL_USER_AGENT"
+timeout_env = "PRIL_HTTP_TIMEOUT"
+max_download_mb_env = "PRIL_MAX_DOWNLOAD_MB"
+request_delay_seconds_env = "PRIL_REQUEST_DELAY_SECONDS"
+default_timeout_seconds = 30
+default_max_download_mb = 250
+default_request_delay_seconds = 1.0
+
+[analysis]
+phrase_ngram_words = 9
+phrase_min_documents = 2
+near_duplicate_threshold = 0.82
+max_pairwise_documents = 250

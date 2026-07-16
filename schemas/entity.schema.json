@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Entity",
+  "type": "object",
+  "required": [
+    "entity_id",
+    "canonical_name",
+    "entity_type"
+  ],
+  "properties": {
+    "entity_id": {
+      "type": "string",
+      "pattern": "^ent_"
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "entity_type": {
+      "enum": [
+        "person",
+        "organization",
+        "program",
+        "place",
+        "facility",
+        "technology",
+        "document",
+        "identifier",
+        "other"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "label",
+    "date_precision"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^evt_"
+    },
+    "label": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "end_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date_precision": {
+      "enum": [
+        "exact",
+        "day",
+        "month",
+        "year",
+        "range",
+        "unknown"
+      ]
+    },
+    "source_document_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page_number": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,63 @@
+[source.nara]
+name = "National Archives Catalog API v2"
+mode = "keyed_api"
+base_url = "https://catalog.archives.gov/api/v2/records/search"
+key_env = "NARA_API_KEY"
+status = "implemented"
+
+[source.osti]
+name = "OSTI.GOV API v1"
+mode = "active_api"
+base_url = "https://www.osti.gov/api/v1/records"
+status = "implemented"
+
+[source.internet_archive]
+name = "Internet Archive Advanced Search"
+mode = "active_api"
+base_url = "https://archive.org/advancedsearch.php"
+status = "implemented"
+
+[source.federal_register]
+name = "FederalRegister.gov API"
+mode = "active_api"
+base_url = "https://www.federalregister.gov/api/v1/documents.json"
+status = "implemented"
+
+[source.courtlistener]
+name = "CourtListener REST API"
+mode = "keyed_api"
+base_url = "https://www.courtlistener.com/api/rest/v3/search/"
+key_env = "COURTLISTENER_TOKEN"
+status = "implemented"
+
+[source.govinfo]
+name = "GovInfo API"
+mode = "keyed_api"
+key_env = "GOVINFO_API_KEY"
+status = "planned-contract-verification"
+
+[source.congress]
+name = "Congress.gov API"
+mode = "keyed_api"
+key_env = "CONGRESS_API_KEY"
+status = "planned-contract-verification"
+
+[source.cia_reading_room]
+name = "CIA FOIA Electronic Reading Room"
+mode = "direct_import"
+status = "manual-discovery"
+
+[source.fbi_vault]
+name = "FBI Vault"
+mode = "direct_import"
+status = "manual-discovery"
+
+[source.nsa_foia]
+name = "NSA FOIA and Declassification Releases"
+mode = "direct_import"
+status = "manual-discovery"
+
+[source.frus]
+name = "Foreign Relations of the United States"
+mode = "direct_import"
+status = "manual-discovery"

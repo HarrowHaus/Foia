@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hypothesis",
+  "type": "object",
+  "required": [
+    "hypothesis_id",
+    "statement",
+    "status"
+  ],
+  "properties": {
+    "hypothesis_id": {
+      "type": "string",
+      "pattern": "^hyp_"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "testing",
+        "supported",
+        "weakened",
+        "disconfirmed",
+        "superseded"
+      ]
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disconfirmers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

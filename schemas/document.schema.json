@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Document",
+  "type": "object",
+  "required": [
+    "document_id",
+    "sha256",
+    "source_id",
+    "retrieved_at",
+    "local_path"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc_"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "archive_identifier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "local_path": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

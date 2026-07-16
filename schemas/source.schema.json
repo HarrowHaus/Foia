@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source",
+  "type": "object",
+  "required": [
+    "source_id",
+    "name",
+    "mode"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "active_api",
+        "keyed_api",
+        "direct_import",
+        "bulk_dataset",
+        "planned"
+      ]
+    },
+    "base_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "terms_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

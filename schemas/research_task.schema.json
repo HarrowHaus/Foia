@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchTask",
+  "type": "object",
+  "required": [
+    "task_id",
+    "question",
+    "status"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^tsk_"
+    },
+    "question": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "queued",
+        "active",
+        "blocked",
+        "completed",
+        "dead_end"
+      ]
+    },
+    "predicted_records": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stopping_rule": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

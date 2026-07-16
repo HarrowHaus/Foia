@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PhaseCheckpoint",
+  "type": "object",
+  "required": [
+    "checkpoint_id",
+    "phase",
+    "objective",
+    "deliverables",
+    "stopping_criteria",
+    "decision"
+  ],
+  "properties": {
+    "checkpoint_id": {
+      "type": "string",
+      "pattern": "^chk_"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stopping_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision": {
+      "enum": [
+        "advance",
+        "continue",
+        "revise",
+        "stop"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,2 @@
+{"query_id":"qry_example_1","source":"osti","query":"exact program phrase","purpose":"Test technical-literature precursor terminology","status":"queued"}
+{"query_id":"qry_example_2","source":"nara","query":"\"exact phrase\" AND contractor","purpose":"Test cross-archive institutional bridge","status":"queued"}
