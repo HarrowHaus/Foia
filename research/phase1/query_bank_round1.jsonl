@@ -1,0 +1,13 @@
+{"query_id":"qry_r1_fr_01","source":"federal_register","query":"records disposition","category":"records_schedules","purpose":"Locate records-schedule and disposition notices; baseline for withdrawn/destroyed-records signals"}
+{"query_id":"qry_r1_fr_02","source":"federal_register","query":"transfer of functions","category":"successor_terminology","purpose":"Administrative successor-program and agency-transfer notices"}
+{"query_id":"qry_r1_fr_03","source":"federal_register","query":"termination of the program","category":"program_lifecycle","purpose":"Formally terminated programs as precursors for successor-program signals"}
+{"query_id":"qry_r1_os_01","source":"osti","query":"classified appendix","category":"missing_references","purpose":"Technical reports citing appendices withheld from the public version"}
+{"query_id":"qry_r1_os_02","source":"osti","query":"successor program","category":"successor_terminology","purpose":"Technical literature acknowledging successor efforts after termination"}
+{"query_id":"qry_r1_os_03","source":"osti","query":"sanitized version","category":"redaction_differential","purpose":"Reports existing in sanitized and unsanitized variants"}
+{"query_id":"qry_r1_os_04","source":"osti","query":"unobligated balances","category":"budget","purpose":"Budget discontinuity and transfer language in DOE literature"}
+{"query_id":"qry_r1_ia_01","source":"internet_archive","query":"attachment removed","category":"missing_references","purpose":"Released records whose attachments were withheld or lost"}
+{"query_id":"qry_r1_ia_02","source":"internet_archive","query":"routing and record sheet","category":"routing_terms","purpose":"Internal routing artifacts revealing office-to-office document flow"}
+{"query_id":"qry_r1_ia_03","source":"internet_archive","query":"destruction of records","category":"records_schedules","purpose":"Records-destruction memoranda and schedules in agency mirrors"}
+{"query_id":"qry_r1_ia_04","source":"internet_archive","query":"successor organization","category":"successor_terminology","purpose":"Continuity language after formal program/organization termination"}
+{"query_id":"qry_r1_ia_05","source":"internet_archive","query":"reprogramming of funds","category":"budget","purpose":"Funding moved between programs outside normal appropriation"}
+{"query_id":"qry_r1_ia_06","source":"internet_archive","query":"no record of this document","category":"contradiction","purpose":"Records referencing documents that other offices cannot locate"}
