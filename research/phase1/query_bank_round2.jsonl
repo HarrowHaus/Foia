@@ -1,0 +1,7 @@
+{"query_id":"qry_r2_ia_01","source":"internet_archive","query":"Office of Budget, Program Analysis and Manpower","category":"organizations","purpose":"Harvested org from round-1 budget cluster; map its document footprint"}
+{"query_id":"qry_r2_ia_02","source":"internet_archive","query":"questions for the record HAC","category":"routing_terms","purpose":"Harvested oversight-routing vocabulary (House Appropriations Committee QFRs) from round-1 budget cluster"}
+{"query_id":"qry_r2_ia_03","source":"internet_archive","query":"reprogramming action","category":"budget","purpose":"Broaden round-1 reprogramming cluster with procedural variant vocabulary"}
+{"query_id":"qry_r2_ia_04","source":"internet_archive","query":"conduit for funds","category":"budget","purpose":"Follow round-1 foundation-funding lead with neutral conduit vocabulary"}
+{"query_id":"qry_r2_ia_05","source":"internet_archive","query":"destruction certificate","category":"records_schedules","purpose":"Refine noisy round-1 records-destruction query with exact form vocabulary"}
+{"query_id":"qry_r2_fr_01","source":"federal_register","query":"Records Schedules; Availability and Request for Comments","category":"records_schedules","purpose":"Exact NARA notice title; round-1 generic query matched NAGPRA noise instead"}
+{"query_id":"qry_r2_os_01","source":"osti","query":"reprogramming","category":"budget","purpose":"Cross-family independence check: does budget-transfer vocabulary appear in DOE literature"}
